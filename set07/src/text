@@ -1,0 +1,53 @@
+function Header() {
+   return (
+     <div>
+        <Container>
+            <Main>
+            <Logo to="/">
+                <img src={image1} alt=''/>
+            </Logo>
+            <LinkHolder>
+            <Holder to= "/save">Save</Holder>
+            <Holder to= "/invest">Invest</Holder>
+            <Holder to= "/stories">Stories</Holder>
+            <Holder to= "/faqs">FAQs</Holder>
+            <Holder to= "/resources">Resources</Holder>
+            </LinkHolder>
+            </Main>
+        </Container>
+     </div>
+   )
+ }
+ 
+ export default Header
+
+ const Logo = styled(Link)`
+ padding:0 10px;
+font-weight:800;
+font-size:40px;
+text-decoration:none;
+color:black;`
+ const LinkHolder = styled.div``
+ const Holder = styled(Link)`
+ padding:0 10px;
+font-weight:100;
+/* font-size:40px; */
+text-decoration:none;
+color:black;
+ `
+
+ const Main = styled.div`
+ width:100%;
+height:100%;
+display:flex;
+/* justify-content:space-between; */
+align-items:center;
+background-color:red;`
+ const Container = styled.div`
+ width:100%;
+height:80px;
+border-radius:1px solid silver;
+display:flex;
+justify-content:center;
+position:fixed;
+ `
